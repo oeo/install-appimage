@@ -1,4 +1,7 @@
-# AppImage Installer
+# Don't use this.
+It's for personal use only, probably useless for you.
+
+# cli/appimg
 
 A command-line tool to install, manage, and uninstall AppImage applications on Linux systems.
 
@@ -10,14 +13,15 @@ A command-line tool to install, manage, and uninstall AppImage applications on L
    cd install-appimage
    ```
 
-2. Install dependencies:
+2. Install:
    ```
    bun install
+   sudo ln -s $(pwd)/module.ts /usr/local/bin/appimg
    ```
 
-3. Install the tool globally:
+3. Run it
    ```
-   bun link
+   appimg --help
    ```
 
 ## Usage
@@ -57,8 +61,4 @@ appimg remove Redis-Insight-linux-x86_64
 ## Note
 
 Requires sudo privileges for installation and uninstallation operations.
-
-## Development
-
-The main script is located in `module.ts`. To make changes, edit this file and then run `bun link` again to update the global installation.
 

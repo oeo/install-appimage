@@ -1,4 +1,5 @@
 {
+  "name": "install-appimage",
   "bin": {
     "appimg": "./module.ts"
   },

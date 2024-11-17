@@ -1,3 +1,5 @@
+#!/usr/bin/env bun
+
 import minimist from 'minimist';
 import { exec, execSync } from 'child_process';
 import { existsSync, promises as fs } from 'fs';
@@ -33,7 +35,7 @@ async function runWithSudo(command: string): Promise<void> {
 
 function showHelp() {
   console.log(`
-Usage: install-appimage [command] [options]
+Usage: appimg [command] [options]
 
 Commands:
   install <path>     Install an AppImage (default if <path> is provided)
