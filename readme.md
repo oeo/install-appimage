@@ -7,7 +7,8 @@ A command-line tool to install, manage, and uninstall AppImage applications on L
 1. Clone this repository:
    ```
    git clone https://github.com/oeo/install-appimage.git
-   cd install-appimage ```
+   cd install-appimage
+   ```
 
 2. Install dependencies:
    ```
